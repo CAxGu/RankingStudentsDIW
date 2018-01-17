@@ -1,0 +1,266 @@
+.grid-body{
+    height: 100%;
+    width: 100%;    
+    background-color: palegoldenrod;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(auto);
+}
+
+header{
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#header-site{
+    margin: 0px;  
+    background-image: url('../img/banner.jpg');
+    background-size: 60%;
+    background-clip: padding-box;
+    border: 12px double black;
+    background-origin: border-box;
+ /*    animation-name: zoom;
+    animation-duration: 8s; 
+    animation-timing-function: ease-out; 
+    animation-iteration-count: infinite;
+    animation-play-state: running; */
+}
+
+
+#header-site a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+
+#header-site a:hover{
+    color: rgb(255, 79, 79);
+}
+
+
+.grid-header{
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+#isotipo{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#isotipo img{
+    height: 30%;
+    width: 30%;
+    padding-left: 50%;
+}
+
+
+
+#title{
+    grid-row: 1;
+    grid-column: 2;
+   padding: 2rem;
+   margin-left: -25%;
+}
+
+
+/* --------------------------------------------  NAV-BAR  --------------*/
+
+
+#nav-bar{
+    grid-row: 2;
+    border:3px;
+    box-shadow: inset -1px -2px 0px 4px rgba(0,0,0,0.73);
+    background-color: orange;
+}
+
+#nav-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding:1;
+}
+
+#nav-bar ul li{
+    float: left;
+    display: block;
+}
+
+#nav-bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+#nav-bar li a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0,0,0,0.73);
+    transform: scale(1.3) rotate(-5deg) translateX(2px);
+    animation-name: zoom;
+    animation-duration: 1s; 
+    animation-timing-function: ease-out; 
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+}
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3) rotate(-5deg) translateX(2px);
+        }
+    25% {
+        transform: scale(1) rotate(0deg) translateX(2px);
+        }
+    50% {
+        transform: scale(1.3) rotate(5deg) translateX(2px);
+      }
+    75% {
+        transform: scale(1) rotate(0deg) translateX(2px);
+      }
+    100% {
+        transform: scale(1.3) rotate(-5deg) translateX(2px);
+      }
+  }
+
+
+
+
+/* ----------------------------------------- CONTENT ---------*/
+#content{
+    grid-row: 3;
+}
+
+
+#content *{
+    margin: 2em !important;
+	margin-top: 1em !important;
+ }
+
+button {
+    background-color: #6f9ceb;
+    box-shadow: 6px 5px 10px 0px rgba(0,0,0,0.76);  	
+    border-radius: 8px;
+    font-family: Arial;
+    font-weight: bold; 
+    color: #ffffff;
+	margin-right:.5em;
+}
+
+input {
+    border-radius: 4px;
+}
+
+td{
+    font-family: sans-serif;
+    color: #000000;
+}
+
+
+
+
+/* --------------------------------- Footer -------------------------*/
+
+footer{
+    grid-row: 4;
+    border: 10px double black;
+    padding: 25px;
+    background: url(../img/footer.png);
+    background-origin: content-box;
+    position: relative ;
+    right: 0  ;
+    bottom: 0  ;
+    left: 0  ;
+    padding: 1em ;
+    padding-bottom: 1.5em;
+    background-color: purple;
+    text-align: center ;
+    color: black;
+    font-weight: bold;
+
+
+    animation-name: arcoiris;
+    animation-duration: 8s; 
+    animation-timing-function: ease-out; 
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+
+
+
+@keyframes arcoiris {
+    0% {
+        background-color: purple;
+        }
+    10% {
+        background-color: blue;
+        }
+    20% {
+        background-color: cyan;
+      }  
+    30% {
+        background-color: green;
+      }
+    40%{
+        background-color: yellow;
+      }  
+    50% {
+        background-color: orange;
+      }
+    60% {
+        background-color: red;
+      }
+    70% {
+      background-color: yellow;
+    }
+    80% {
+      background-color: orange;
+    }
+    90% {
+        background-color: green;
+      }
+    100% {
+        background-color: blue;
+      }
+  }
+
+
+
+#notify{
+    color: grey;
+    position:relative;
+    bottom:0;
+   
+}
+
+
+/* NEW STYLES --------------  */
+
+.labelform {
+	font-weight: bold;
+}
+
+.inputdata{
+	box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.76);
+}
+
+table thead tr td{
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+#idTableRankingBody td{
+	padding: 1rem;
+
+}

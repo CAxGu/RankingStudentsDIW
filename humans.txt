@@ -1,0 +1,30 @@
+/* TEAM */
+
+                            
+Estudiante de 2ndo DAW: Carlos Axel Castex Gudiño.
+                          
+Site: caxelcastex@gmail.com
+                          
+Twitter: @caxgu
+                           
+Location: Ontinyent, Valencia, España.
+						
+
+							
+/* THANKS */
+
+							
+Name: https://moodle.jomuoru.net/
+
+					
+                            
+/* SITE */
+
+                            
+Last update: 2017/10/18
+                            
+Standards: HTML5, CSS3, ES6
+                            
+Software: Visual Studio Code.
+   
+                        
