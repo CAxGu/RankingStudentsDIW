@@ -21,9 +21,9 @@ Name: https://moodle.jomuoru.net/
 /* SITE */
 
                             
-Last update: 2017/10/18
+Last update: 2018/02/16
                             
-Standards: HTML5, CSS3, ES6
+Standards: HTML5, CSS3, ES6, SASS, ARIA
                             
 Software: Visual Studio Code.
    
