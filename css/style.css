@@ -186,12 +186,17 @@ footer{
     color: black;
     font-weight: bold;
 
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
 
+/* 
     animation-name: arcoiris;
     animation-duration: 8s; 
     animation-timing-function: ease-out; 
     animation-iteration-count: infinite;
-    animation-play-state: running;
+    animation-play-state: running; */
 }
 
 
