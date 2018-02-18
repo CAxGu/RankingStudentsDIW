@@ -1,14 +1,16 @@
-<h2>Add new Graded Task</h2>
-  <p>We understand as a graded task any test or practice that will be marked by teacher and should be reflected in the final mark.</p>
-<form id="newGradedTask">
-  <label for="idTaskName">Task name:</label><br>
-  <input type="text" id="idTaskName" name="taskname" value="" aria-required="true">
-  <br>
-  <label for="idTaskDescription">Task description:</label><br>
-  <textarea rows="4" cols="50" id="idTaskDescription" name="taskdescription" aria-required="true"></textarea>
-  <br>
-  <label for="idTaskWeight"> Weight (0-100 %): </label><br>
-  <input type="number" id="idTaskWeight" name="taskweight" value="" aria-required="true">
-  <br><br>
-  <input type="submit" value="Save">
-</form> 
+<section class="content-addForm">
+  <h2>Add new Graded Task</h2>
+    <p>We understand as a graded task any test or practice that will be marked by teacher and should be reflected in the final mark.</p>
+  <form id="newGradedTask" class="formcontent">
+    <label for="idTaskName" class="formcontent-labelform">Task name:</label>
+    <input type="text" class="formcontent-inputdata" id="idTaskName" name="taskname" value="" required aria-required="true">
+    <br><br>
+    <label for="idTaskDescription" class="formcontent-labelform">Task description:</label>
+    <textarea rows="4" class="formcontent-textarea" cols="50" id="idTaskDescription" name="taskdescription" aria-required="true"></textarea>
+    <br><br>
+    <label for="idTaskWeight" class="formcontent-labelform"> Weight (0-100 %): </label>
+    <input type="number" class="formcontent-inputdata" id="idTaskWeight" name="taskweight" value="" required aria-required="true">
+    <br><br>
+    <input class="formcontent-submit" type="submit" value="Save">
+  </form> 
+</section>
