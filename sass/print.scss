@@ -15,6 +15,18 @@
         ** FOOTER...............Valores pertenecientes al footer
 */
 
+$BODY_BG: palegoldenrod;
+$NAV_BG: orange;
+$FORM_BG:#fffded;
+$CButton_table: #6f9ceb;
+$CButton_submit: #339133;
+$c_base1: black;
+$c_base2: white;
+$c_base3: purple;
+$c_base4: grey;
+
+
+@import '_mixins.scss';
 
 
 
@@ -51,71 +63,7 @@
 
 
 
-
-/*------------------------------------*\
-    $HEADER
-\*------------------------------------*/
-
-
-.gridBody-containerHead{
-    grid-row: 1;
-    max-height: 100%;
-    max-width: 100%;
-
-
-    .containerHead-headerSite{
-        margin: 0px;  
-        background-image: url('../img/banner.jpg');
-        background-size: 60%;
-        background-clip: padding-box;
-        border: 12px double black;
-        background-origin: border-box;
-
-
-        .headerSite-linkHeader{
-            max-height: 100%;
-            max-width: 100%;
-            text-decoration: none;
-            font-size: 2rem;
-            color: white;
-            text-shadow: 3px 3px black;
-            display:block;
-        
-            &:hover{
-                color: rgb(255, 79, 79);
-            }
-        }
-        
-        .headerSite-gridHeader{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-auto-rows: 1fr ;
-        
-
-           .gridHeader-isotipo{
-                height: 100%;
-                width: 100%;
-                grid-row: 1;
-                grid-column: 2;
-            }
-    
-            .gridHeader-isotipo img{
-                max-height: 100%;
-                max-width: 100%;
-                padding-left: 1em;
-            }
-
-            .gridHeader-title{
-                width: 100%;
-                height: 100%;
-                grid-row: 1;
-                grid-column: 1;
-                text-align: right;
-            }
-
-        }
-    }
-}
+@import '_header.scss';
         
 
 /*------------------------------------*\
@@ -126,69 +74,8 @@
         display:none;
     }
 
-/*------------------------------------*\
-    $CONTENT
-\*------------------------------------*/
 
-   
-    .gridBody-content{
-        grid-row: 2;
-        width: 100%;
-        height: 100%;
-    
-
-        .content-button {
-            background-color: #6f9ceb;
-            box-shadow: 6px 5px 10px 0px rgba(0,0,0,0.76);  	
-            border-radius: 8px;
-            font-family: Arial;
-            font-weight: bold; 
-            color: #ffffff;
-            margin-right:.5em;
-        }
-
-        .content-table{
-            width: 100%;
-            height: 100%;
-            text-align: center;
-        }
-
-        .content-input {
-            border-radius: 4px;
-        }
-
-            .table-title{
-                text-align: center;
-                font-weight: bold;
-                color: white;  
-                padding:0.25em;
-                background-color: black;
-            }
-
-            .table-td{
-                font-family: sans-serif;
-                color: #000000;
-                padding: 1rem;
-            }
-
-
-            .formcontent-inputtable{
-                width: 30%;
-                box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.45);
-            }
-
-
-            .formcontent-submit{
-                align-items: right;
-                padding: 0.5em;
-                background-color: rgb(51, 145, 51);
-                color:white;
-                font-size: 16px;
-                border-radius: 5px;
-                float: right;
-            }
-         
-}
+@import '_contenido.scss';
 
 
 

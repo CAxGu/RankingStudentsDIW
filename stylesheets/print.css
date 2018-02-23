@@ -25,7 +25,7 @@
     * CONTENT...............Valores pertenecientes al contenido injectado dentro de 'content'
     * FOOTER...............Valores pertenecientes al footer
 */
-/* line 41, ../sass/print.scss */
+/* line 53, ../sass/print.scss */
 .gridBody {
   height: 100%;
   width: 100%;
@@ -39,23 +39,20 @@
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
-/* line 60, ../sass/print.scss */
-.gridBody-containerHead {
+/* line 9, ../sass/_header.scss */
+header.gridBody-containerHead {
   grid-row: 1;
-  max-height: 100%;
-  max-width: 100%;
 }
-/* line 66, ../sass/print.scss */
-.gridBody-containerHead .containerHead-headerSite {
+/* line 12, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite {
+  height: 100%;
+  width: 100%;
   margin: 0px;
   background-image: url("../img/banner.jpg");
   background-size: 60%;
-  background-clip: padding-box;
-  border: 12px double black;
-  background-origin: border-box;
 }
-/* line 75, ../sass/print.scss */
-.gridBody-containerHead .containerHead-headerSite .headerSite-linkHeader {
+/* line 24, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a {
   max-height: 100%;
   max-width: 100%;
   text-decoration: none;
@@ -63,43 +60,40 @@
   color: white;
   text-shadow: 3px 3px black;
   display: block;
-}
-/* line 84, ../sass/print.scss */
-.gridBody-containerHead .containerHead-headerSite .headerSite-linkHeader:hover {
-  color: #ff4f4f;
-}
-/* line 89, ../sass/print.scss */
-.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
 }
-/* line 95, ../sass/print.scss */
-.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader .gridHeader-isotipo {
-  height: 100%;
-  width: 100%;
-  grid-row: 1;
-  grid-column: 2;
+/* line 36, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a:hover {
+  color: #ff4f4f;
 }
-/* line 102, ../sass/print.scss */
-.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader .gridHeader-isotipo img {
-  max-height: 100%;
-  max-width: 100%;
-  padding-left: 1em;
-}
-/* line 108, ../sass/print.scss */
-.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader .gridHeader-title {
+/* line 41, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-title {
   width: 100%;
   height: 100%;
   grid-row: 1;
   grid-column: 1;
   text-align: right;
 }
+/* line 49, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo {
+  height: 100%;
+  width: 100%;
+  grid-row: 1;
+  grid-column: 2;
+}
+/* line 55, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo img {
+  max-height: 100%;
+  max-width: 100%;
+  padding-left: 1em;
+}
 
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
-/* line 125, ../sass/print.scss */
+/* line 73, ../sass/print.scss */
 .gridBody-navBar {
   display: none;
 }
@@ -107,66 +101,103 @@
 /*------------------------------------*\
     $CONTENT
 \*------------------------------------*/
-/* line 134, ../sass/print.scss */
-.gridBody-content {
-  grid-row: 2;
+/* line 10, ../sass/_contenido.scss */
+section {
+  grid-row: 3;
   width: 100%;
   height: 100%;
 }
-/* line 140, ../sass/print.scss */
-.gridBody-content .content-button {
-  background-color: #6f9ceb;
-  box-shadow: 6px 5px 10px 0px rgba(0, 0, 0, 0.76);
+/* line 15, ../sass/_contenido.scss */
+section button {
+  box-shadow: 6px 5px 10px 0px black;
   border-radius: 8px;
   font-family: Arial;
   font-weight: bold;
-  color: #ffffff;
   margin-right: .5em;
+  color: white;
+  background-color: #6f9ceb;
 }
-/* line 150, ../sass/print.scss */
-.gridBody-content .content-table {
+/* line 24, ../sass/_contenido.scss */
+section table {
   width: 100%;
   height: 100%;
   text-align: center;
 }
-/* line 156, ../sass/print.scss */
-.gridBody-content .content-input {
-  border-radius: 4px;
-}
-/* line 160, ../sass/print.scss */
-.gridBody-content .table-title {
+/* line 29, ../sass/_contenido.scss */
+section table td.table-title {
   text-align: center;
   font-weight: bold;
-  color: white;
   padding: 0.25em;
+  color: white;
   background-color: black;
 }
-/* line 168, ../sass/print.scss */
-.gridBody-content .table-td {
+/* line 37, ../sass/_contenido.scss */
+section table td {
   font-family: sans-serif;
-  color: #000000;
+  color: black;
   padding: 1rem;
 }
-/* line 175, ../sass/print.scss */
-.gridBody-content .formcontent-inputtable {
+/* line 44, ../sass/_contenido.scss */
+section table input {
+  border-radius: 4px;
   width: 30%;
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 3px 3px 10px 0px black;
 }
-/* line 181, ../sass/print.scss */
-.gridBody-content .formcontent-submit {
-  align-items: right;
+/* line 52, ../sass/_contenido.scss */
+section section.content-addForm {
+  margin: 10px auto;
+  width: 50%;
+  height: 100%;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 3em;
+  background-color: #fffded !important;
+  padding-bottom: 1em;
+}
+/* line 63, ../sass/_contenido.scss */
+section section.content-addForm h2 {
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+}
+/* line 70, ../sass/_contenido.scss */
+section section.content-addForm form {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* line 74, ../sass/_contenido.scss */
+section section.content-addForm form label {
+  size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 80, ../sass/_contenido.scss */
+section section.content-addForm form input {
+  width: 100%;
+  box-shadow: 3px 3px 10px 0px black;
+}
+/* line 85, ../sass/_contenido.scss */
+section section.content-addForm form textarea {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  box-shadow: 3px 3px 10px 0px black;
+}
+/* line 93, ../sass/_contenido.scss */
+section section.content-addForm form .formcontent-submit {
   padding: 0.5em;
-  background-color: #339133;
   color: white;
+  background-color: #339133;
   font-size: 16px;
   border-radius: 5px;
   float: right;
+  width: 90px;
 }
 
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
-/* line 200, ../sass/print.scss */
+/* line 87, ../sass/print.scss */
 .gridBody-footer {
   display: none;
 }
