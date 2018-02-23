@@ -1,0 +1,65 @@
+@keyframes zoom {
+    0% {
+        transform: scale(1.3) rotate(-5deg) translateX(2px);
+        }
+    25% {
+        transform: scale(1) rotate(0deg) translateX(2px);
+        }
+    50% {
+        transform: scale(1.3) rotate(5deg) translateX(2px);
+      }
+    75% {
+        transform: scale(1) rotate(0deg) translateX(2px);
+      }
+    100% {
+        transform: scale(1.3) rotate(-5deg) translateX(2px);
+      }
+  }
+
+
+
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+
+
+nav.gridBody-navBar{
+    grid-row: 2;
+    border:3px;
+    box-shadow: inset -1px -2px 0px 4px rgba(0,0,0,0.73);
+    background-color: $NAV_BG;
+
+    &>ul{
+        list-style-type: none;
+        margin: 0;
+        padding:1;
+
+        li{
+            float: left;
+            display: block;
+
+            a{
+                display: block;
+                color:$c_base1;
+                text-align: center;
+                padding: 18px 16px;
+                text-decoration: none;
+
+                &:hover{
+                    cursor: pointer;
+                    @include colorAll($c_base2,$c_base1);
+                    @include transformation(1.3,-5deg,2px);
+                    animation-name: zoom;
+                    animation-duration: 1s; 
+                    animation-timing-function: ease-out; 
+                    animation-iteration-count: infinite;
+                    animation-play-state: running;
+
+                }
+            }
+        }
+
+    }
+}
+

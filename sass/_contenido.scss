@@ -1,0 +1,104 @@
+
+
+
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+
+
+  
+section{
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+
+    button{
+        box-shadow: 6px 5px 10px 0px $c_base1;  	
+        border-radius: 8px;
+        font-family: Arial;
+        font-weight: bold; 
+        margin-right:.5em;
+        @include colorAll($c_base2,$CButton_table);
+    }
+
+    table{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        td.table-title{
+            text-align: center;
+            font-weight: bold;
+            padding:0.25em;
+            @include colorAll($c_base2,$c_base1);
+        }
+
+
+        td{
+            font-family: sans-serif;
+            color: $c_base1;
+            padding: 1rem;
+        }
+
+
+        input{
+            border-radius: 4px;
+            width: 30%;
+            box-shadow: 3px 3px 10px 0px $c_base1;
+        }
+    
+    }
+
+        section.content-addForm{
+            margin: 10px auto;
+            width: 50%;
+            height: 100%;
+            @include border(1px,$c_base1,solid);
+            border-radius: 5px;
+            padding: 3em;
+            background-color:$FORM_BG !important;
+            padding-bottom: 1em;
+
+
+            h2{
+                font-size: 2em;
+                margin-top: 0;
+                text-align: center; 
+            }
+
+
+            form{
+                max-height: 100%;
+                max-width: 100%;
+
+                label{
+                    size: 3rem;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+
+                input{
+                    width: 100%;
+                    box-shadow: 3px 3px 10px 0px $c_base1;
+                }
+
+                textarea{
+                    width: 100%;
+                    height: auto;
+                    overflow-y: auto;
+                    box-shadow: 3px 3px 10px 0px $c_base1;
+                }
+
+
+                 .formcontent-submit{
+                    padding: 0.5em;
+                    @include colorAll($c_base2,$CButton_submit);
+                    font-size: 16px;
+                    border-radius: 5px;
+                    float: right;
+                    width: 90px;
+                }
+            }
+        }
+
+}

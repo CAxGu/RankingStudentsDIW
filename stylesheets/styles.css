@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    $INDICE
+\*------------------------------------*/
+/**
+    * INDICE........... 'Indice' de todo el contenido incluido en el css
+    * FONT-FACE........... Importamos fuentes de iconos y font-face
+    * ANIMATIONS........... DeclaraciĂłn de animaciones utilizadas en el proyecto
+    * BODY........... Contenido incluido dentro del body
+        ** HEADER...............Valores pertenecientes al head de nuestro sitio
+        ** NAVIGATION...............Valores pertenecientes navigation bar de nuestro sitio
+        ** CONTENT...............Valores pertenecientes al contenido injectado dentro de 'content'
+        ** FOOTER...............Valores pertenecientes al footer
+*/
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+/* line 9, ../sass/_header.scss */
+header.gridBody-containerHead {
+  grid-row: 1;
+}
+/* line 14, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-image: url("../img/banner.jpg");
+  background-size: 60%;
+}
+/* line 26, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a {
+  max-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 3px 3px black;
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+}
+/* line 38, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a:hover {
+  color: #ff4f4f;
+}
+/* line 43, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-title {
+  width: 100%;
+  height: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  text-align: right;
+}
+/* line 51, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo {
+  height: 100%;
+  width: 100%;
+  grid-row: 1;
+  grid-column: 2;
+}
+/* line 57, ../sass/_header.scss */
+header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo img {
+  max-height: 100%;
+  max-width: 100%;
+  padding-left: 1em;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.3) rotate(-5deg) translateX(2px);
+  }
+  25% {
+    transform: scale(1) rotate(0deg) translateX(2px);
+  }
+  50% {
+    transform: scale(1.3) rotate(5deg) translateX(2px);
+  }
+  75% {
+    transform: scale(1) rotate(0deg) translateX(2px);
+  }
+  100% {
+    transform: scale(1.3) rotate(-5deg) translateX(2px);
+  }
+}
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+/* line 27, ../sass/_menu.scss */
+nav.gridBody-navBar {
+  grid-row: 2;
+  border: 3px;
+  box-shadow: inset -1px -2px 0px 4px rgba(0, 0, 0, 0.73);
+  background-color: orange;
+}
+/* line 33, ../sass/_menu.scss */
+nav.gridBody-navBar > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+}
+/* line 38, ../sass/_menu.scss */
+nav.gridBody-navBar > ul li {
+  float: left;
+  display: block;
+}
+/* line 42, ../sass/_menu.scss */
+nav.gridBody-navBar > ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+}
+/* line 49, ../sass/_menu.scss */
+nav.gridBody-navBar > ul li a:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  transform: scale(1.3) rotate(-5deg) translateX(2px);
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+/*------------------------------------*\
+    $BODY
+\*------------------------------------*/
+/*
+    * HEADER...............Valores pertenecientes al head de nuestro sitio
+    * NAVIGATION...............Valores pertenecientes navigation bar de nuestro sitio
+    * CONTENT...............Valores pertenecientes al contenido injectado dentro de 'content'
+    * FOOTER...............Valores pertenecientes al footer
+*/
+/* line 51, ../sass/styles.scss */
+body {
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: palegoldenrod;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+/* line 10, ../sass/_contenido.scss */
+section {
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+}
+/* line 15, ../sass/_contenido.scss */
+section button {
+  box-shadow: 6px 5px 10px 0px black;
+  border-radius: 8px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-right: .5em;
+  color: white;
+  background-color: #6f9ceb;
+}
+/* line 24, ../sass/_contenido.scss */
+section table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 29, ../sass/_contenido.scss */
+section table td.table-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.25em;
+  color: white;
+  background-color: black;
+}
+/* line 37, ../sass/_contenido.scss */
+section table td {
+  font-family: sans-serif;
+  color: black;
+  padding: 1rem;
+}
+/* line 44, ../sass/_contenido.scss */
+section table input {
+  border-radius: 4px;
+  width: 30%;
+  box-shadow: 3px 3px 10px 0px black;
+}
+/* line 52, ../sass/_contenido.scss */
+section section.content-addForm {
+  margin: 10px auto;
+  width: 50%;
+  height: 100%;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 3em;
+  background-color: #fffded !important;
+  padding-bottom: 1em;
+}
+/* line 63, ../sass/_contenido.scss */
+section section.content-addForm h2 {
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+}
+/* line 70, ../sass/_contenido.scss */
+section section.content-addForm form {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* line 74, ../sass/_contenido.scss */
+section section.content-addForm form label {
+  size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 80, ../sass/_contenido.scss */
+section section.content-addForm form input {
+  width: 100%;
+  box-shadow: 3px 3px 10px 0px black;
+}
+/* line 85, ../sass/_contenido.scss */
+section section.content-addForm form textarea {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  box-shadow: 3px 3px 10px 0px black;
+}
+/* line 93, ../sass/_contenido.scss */
+section section.content-addForm form .formcontent-submit {
+  padding: 0.5em;
+  color: white;
+  background-color: #339133;
+  font-size: 16px;
+  border-radius: 5px;
+  float: right;
+  width: 90px;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/* line 9, ../sass/_footer.scss */
+footer.gridBody-footer {
+  grid-row: 4;
+  border: 10px double black;
+  background: url(../img/footer.png);
+  background-origin: content-box;
+  position: FIXED;
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  background-color: purple;
+  font-weight: bold;
+  bottom: 0px;
+  padding: 5px;
+  /*Stroke generated with http://owumaro.github.io/text-stroke-generator*/
+  text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px;
+}
+/* line 39, ../sass/_footer.scss */
+footer.gridBody-footer div.footer-Msg {
+  size: 1rem;
+}
+/* line 43, ../sass/_footer.scss */
+footer.gridBody-footer div.footer-notify {
+  color: grey;
+  position: relative;
+  bottom: 0;
+}

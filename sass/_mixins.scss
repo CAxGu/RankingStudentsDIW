@@ -1,0 +1,55 @@
+@mixin colorAll ($color_text, $bg_color){
+    color:$color_text;
+    background-color: $bg_color;
+}
+
+@mixin onHoverColors ($color_hover, $bg_hover){
+    color:$color_hover;
+    background-color: $bg_hover;
+}
+
+@mixin box-sizing ($typeBS){
+    -webkit-box-sizing: $typeBS;
+    -moz-box-sizing: $typeBS;
+    box-sizing: $typeBS;
+}
+
+@mixin transitions ($property, $duration,$timing:linear){
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+}
+
+@mixin animation ($name, $duration, $timing){
+    -moz-animation: $name $duration $timing;
+    -webkit-animation: $name $duration $timing;
+    animation: $name $duration $timing;
+   
+}
+
+
+@mixin border ($size, $border, $color){
+    border: $size $border $color;
+}
+
+
+@mixin transformation ($scale,$rotate,$translateX){
+    transform: scale($scale) rotate($rotate) translateX($translateX);
+}
+
+
+@mixin responsive ($size){
+    @if $size == medium{
+        @media(max-width: 1024px){
+        @content
+        }
+    } @else if $size == small{
+        @media(max-width: 800px){
+        @content
+        }
+    } @else if $size == mini{
+        @media(max-width: 420px){
+        @content
+        }
+    }
+}

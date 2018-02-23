@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    $INDICE
+\*------------------------------------*/
+/**
+    * INDICE........... 'Indice' de todo el contenido incluido en el css
+    * FONT-FACE........... Importamos fuentes de iconos y font-face
+    * ANIMATIONS........... DeclaraciĂłn de animaciones utilizadas en el proyecto
+    * BODY........... Contenido incluido dentro del body
+        ** HEADER...............Valores pertenecientes al head de nuestro sitio
+        ** NAVIGATION...............Valores pertenecientes navigation bar de nuestro sitio
+        ** CONTENT...............Valores pertenecientes al contenido injectado dentro de 'content'
+        ** FOOTER...............Valores pertenecientes al footer
+*/
+
+
+
+// $c_text : #eee;
+// $bg_color:#15a;
+// $c_text_hover: lighten($c_text, 10%);
+// $bg_color_hover: lighten($bg_color, 10%);
+// $title_c: darken($bg_color, 10%);
+$BODY_BG: palegoldenrod;
+$NAV_BG: orange;
+$FORM_BG:#fffded;
+$CButton_table: #6f9ceb;
+$CButton_submit: #339133;
+$c_base1: black;
+$c_base2: white;
+$c_base3: purple;
+$c_base4: grey;
+
+
+@import '_mixins.scss';
+@import '_header.scss';
+@import '_menu.scss';
+
+
+
+/*------------------------------------*\
+    $BODY
+\*------------------------------------*/
+/*
+    * HEADER...............Valores pertenecientes al head de nuestro sitio
+    * NAVIGATION...............Valores pertenecientes navigation bar de nuestro sitio
+    * CONTENT...............Valores pertenecientes al contenido injectado dentro de 'content'
+    * FOOTER...............Valores pertenecientes al footer
+*/
+
+
+
+body{
+    padding: 0px;
+    height: 100%;
+    width: 100%;    
+    background-color: $BODY_BG;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+@import '_contenido.scss';
+@import '_footer.scss';

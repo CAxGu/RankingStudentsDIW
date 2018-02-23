@@ -1,0 +1,172 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+ /*------------------------------------*\
+    $INDICE
+\*------------------------------------*/
+/**
+    * INDICE........... 'Indice' de todo el contenido incluido en el css
+    * FONT-FACE........... Importamos fuentes de iconos y font-face
+    * BODY........... Contenido incluido dentro del body
+        ** HEADER...............Valores pertenecientes al head de nuestro sitio
+        ** NAVIGATION...............Valores pertenecientes navigation bar de nuestro sitio
+        ** CONTENT...............Valores pertenecientes al contenido injectado dentro de 'content'
+        ** FOOTER...............Valores pertenecientes al footer
+*/
+/*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+/*------------------------------------*\
+    $BODY
+\*------------------------------------*/
+/*
+    * HEADER...............Valores pertenecientes al head de nuestro sitio
+    * NAVIGATION...............Valores pertenecientes navigation bar de nuestro sitio
+    * CONTENT...............Valores pertenecientes al contenido injectado dentro de 'content'
+    * FOOTER...............Valores pertenecientes al footer
+*/
+/* line 41, ../sass/print.scss */
+.gridBody {
+  height: 100%;
+  width: 100%;
+  background-color: palegoldenrod;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto);
+}
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+/* line 60, ../sass/print.scss */
+.gridBody-containerHead {
+  grid-row: 1;
+  max-height: 100%;
+  max-width: 100%;
+}
+/* line 66, ../sass/print.scss */
+.gridBody-containerHead .containerHead-headerSite {
+  margin: 0px;
+  background-image: url("../img/banner.jpg");
+  background-size: 60%;
+  background-clip: padding-box;
+  border: 12px double black;
+  background-origin: border-box;
+}
+/* line 75, ../sass/print.scss */
+.gridBody-containerHead .containerHead-headerSite .headerSite-linkHeader {
+  max-height: 100%;
+  max-width: 100%;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 3px 3px black;
+  display: block;
+}
+/* line 84, ../sass/print.scss */
+.gridBody-containerHead .containerHead-headerSite .headerSite-linkHeader:hover {
+  color: #ff4f4f;
+}
+/* line 89, ../sass/print.scss */
+.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+}
+/* line 95, ../sass/print.scss */
+.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader .gridHeader-isotipo {
+  height: 100%;
+  width: 100%;
+  grid-row: 1;
+  grid-column: 2;
+}
+/* line 102, ../sass/print.scss */
+.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader .gridHeader-isotipo img {
+  max-height: 100%;
+  max-width: 100%;
+  padding-left: 1em;
+}
+/* line 108, ../sass/print.scss */
+.gridBody-containerHead .containerHead-headerSite .headerSite-gridHeader .gridHeader-title {
+  width: 100%;
+  height: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  text-align: right;
+}
+
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+/* line 125, ../sass/print.scss */
+.gridBody-navBar {
+  display: none;
+}
+
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+/* line 134, ../sass/print.scss */
+.gridBody-content {
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+}
+/* line 140, ../sass/print.scss */
+.gridBody-content .content-button {
+  background-color: #6f9ceb;
+  box-shadow: 6px 5px 10px 0px rgba(0, 0, 0, 0.76);
+  border-radius: 8px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: .5em;
+}
+/* line 150, ../sass/print.scss */
+.gridBody-content .content-table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 156, ../sass/print.scss */
+.gridBody-content .content-input {
+  border-radius: 4px;
+}
+/* line 160, ../sass/print.scss */
+.gridBody-content .table-title {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 0.25em;
+  background-color: black;
+}
+/* line 168, ../sass/print.scss */
+.gridBody-content .table-td {
+  font-family: sans-serif;
+  color: #000000;
+  padding: 1rem;
+}
+/* line 175, ../sass/print.scss */
+.gridBody-content .formcontent-inputtable {
+  width: 30%;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.45);
+}
+/* line 181, ../sass/print.scss */
+.gridBody-content .formcontent-submit {
+  align-items: right;
+  padding: 0.5em;
+  background-color: #339133;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  float: right;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/* line 200, ../sass/print.scss */
+.gridBody-footer {
+  display: none;
+}
