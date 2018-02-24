@@ -8,6 +8,7 @@
 
 header.gridBody-containerHead{
     grid-row: 1;
+ 
 
     &>section.containerHead-headerSite{
         height: 100%;
@@ -19,7 +20,19 @@ header.gridBody-containerHead{
         //  background-clip: padding-box;
         // border: 12px double black;
         // background-origin: border-box;
-
+        @include responsive(medium){
+            font-size: 1rem;
+            text-shadow: 6px 6px black;           
+        }
+        @include responsive(small){
+            font-size: 3rem;
+            text-shadow: 6px 6px black;           
+        }
+        @include responsive(mini){
+            font-size: 5rem;
+            text-shadow: 8px 8px black;           
+        }
+      
 
         a{
             max-height: 100%;
@@ -33,6 +46,7 @@ header.gridBody-containerHead{
             grid-template-columns: repeat(2,1fr);
             grid-auto-rows: 1fr ;
 
+
            &:hover{
             color: rgb(255, 79, 79);
            }
@@ -44,6 +58,18 @@ header.gridBody-containerHead{
             grid-row: 1;
             grid-column: 1;
             text-align: right;
+            @include responsive(medium){
+                font-size: 2rem ;
+                text-shadow: 6px 6px black;           
+            }
+            @include responsive(small){
+                font-size: 1.9rem ;
+                text-shadow: 6px 6px black;           
+            }
+            @include responsive(mini){
+                padding-left: 0.5em;           
+            }
+            
            }
 
            div.gridHeader-isotipo{
@@ -56,6 +82,18 @@ header.gridBody-containerHead{
                 max-height: 100%;
                 max-width: 100%;
                 padding-left: 1em; 
+                @include responsive(medium){
+                    padding-left: 2.5em;           
+                }
+                @include responsive(small){
+                    padding-left: 2.5em;           
+                }
+                @include responsive(mini){
+                    max-height: 90%;
+                    max-width: 90%;
+                    padding-left: 1.5em;           
+                }
+                
             }
 
            }

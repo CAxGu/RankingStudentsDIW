@@ -11,9 +11,9 @@ footer.gridBody-footer{
     @include border(10px,double,$c_base1);
     background: url(../img/footer.png);
     background-origin: content-box;
-    position: FIXED ;
-    right: 0 ;
-    left: 0 ;
+    // position: FIXED ;
+    // right: 0 ;
+    // left: 0 ;
     text-align: center ;
     @include colorAll($c_base2,$c_base3);
     font-weight: bold;
@@ -35,6 +35,19 @@ footer.gridBody-footer{
     $c_base1 1.41734px -1.41108px 0px, 
     $c_base1 1.92034px -0.558831px 0px;    
 
+    @include responsive(medium){
+        padding: 5px;
+        font-size: 1em;
+    }
+    @include responsive(small){
+        padding: 5px;
+        font-size: 1em;
+    }
+    @include responsive(mini){
+        padding: 8px;
+        font-size: 1.1em;
+    }
+    
 
     div.footer-Msg{
         size: 1rem;

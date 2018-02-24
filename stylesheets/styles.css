@@ -19,7 +19,7 @@
 header.gridBody-containerHead {
   grid-row: 1;
 }
-/* line 14, ../sass/_header.scss */
+/* line 13, ../sass/_header.scss */
 header.gridBody-containerHead > section.containerHead-headerSite {
   height: 100%;
   width: 100%;
@@ -27,7 +27,28 @@ header.gridBody-containerHead > section.containerHead-headerSite {
   background-image: url("../img/banner.jpg");
   background-size: 60%;
 }
-/* line 26, ../sass/_header.scss */
+@media (max-width: 1024px) {
+  /* line 13, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite {
+    font-size: 1rem;
+    text-shadow: 6px 6px black;
+  }
+}
+@media (max-width: 760px) {
+  /* line 13, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite {
+    font-size: 3rem;
+    text-shadow: 6px 6px black;
+  }
+}
+@media (max-width: 420px) {
+  /* line 13, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite {
+    font-size: 5rem;
+    text-shadow: 8px 8px black;
+  }
+}
+/* line 37, ../sass/_header.scss */
 header.gridBody-containerHead > section.containerHead-headerSite a {
   max-height: 100%;
   max-width: 100%;
@@ -40,11 +61,11 @@ header.gridBody-containerHead > section.containerHead-headerSite a {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
 }
-/* line 38, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 header.gridBody-containerHead > section.containerHead-headerSite a:hover {
   color: #ff4f4f;
 }
-/* line 43, ../sass/_header.scss */
+/* line 55, ../sass/_header.scss */
 header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-title {
   width: 100%;
   height: 100%;
@@ -52,18 +73,58 @@ header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeade
   grid-column: 1;
   text-align: right;
 }
-/* line 51, ../sass/_header.scss */
+@media (max-width: 1024px) {
+  /* line 55, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-title {
+    font-size: 2rem;
+    text-shadow: 6px 6px black;
+  }
+}
+@media (max-width: 760px) {
+  /* line 55, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-title {
+    font-size: 1.9rem;
+    text-shadow: 6px 6px black;
+  }
+}
+@media (max-width: 420px) {
+  /* line 55, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-title {
+    padding-left: 0.5em;
+  }
+}
+/* line 75, ../sass/_header.scss */
 header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo {
   height: 100%;
   width: 100%;
   grid-row: 1;
   grid-column: 2;
 }
-/* line 57, ../sass/_header.scss */
+/* line 81, ../sass/_header.scss */
 header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo img {
   max-height: 100%;
   max-width: 100%;
   padding-left: 1em;
+}
+@media (max-width: 1024px) {
+  /* line 81, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo img {
+    padding-left: 2.5em;
+  }
+}
+@media (max-width: 760px) {
+  /* line 81, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo img {
+    padding-left: 2.5em;
+  }
+}
+@media (max-width: 420px) {
+  /* line 81, ../sass/_header.scss */
+  header.gridBody-containerHead > section.containerHead-headerSite a div.gridHeader-isotipo img {
+    max-height: 90%;
+    max-width: 90%;
+    padding-left: 1.5em;
+  }
 }
 
 @keyframes zoom {
@@ -124,6 +185,26 @@ nav.gridBody-navBar > ul li a:hover {
   animation-iteration-count: infinite;
   animation-play-state: running;
 }
+@media (max-width: 760px) {
+  /* line 49, ../sass/_menu.scss */
+  nav.gridBody-navBar > ul li a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transform: inherit;
+    animation: inherit;
+  }
+}
+@media (max-width: 420px) {
+  /* line 49, ../sass/_menu.scss */
+  nav.gridBody-navBar > ul li a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transform: inherit;
+    animation: inherit;
+  }
+}
 
 /*------------------------------------*\
     $BODY
@@ -151,8 +232,8 @@ body {
 /* line 10, ../sass/_contenido.scss */
 section {
   grid-row: 3;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 /* line 15, ../sass/_contenido.scss */
 section button {
@@ -164,13 +245,89 @@ section button {
   color: white;
   background-color: #6f9ceb;
 }
-/* line 24, ../sass/_contenido.scss */
+/* line 28, ../sass/_contenido.scss */
 section table {
   width: 100%;
   height: 100%;
   text-align: center;
 }
-/* line 29, ../sass/_contenido.scss */
+@media (max-width: 760px) {
+  /* line 33, ../sass/_contenido.scss */
+  section table table, section table thead, section table tbody, section table th, section table td, section table tr {
+    display: block;
+  }
+  /* line 37, ../sass/_contenido.scss */
+  section table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* line 43, ../sass/_contenido.scss */
+  section table td {
+    border: none;
+    border-bottom: 2px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  /* line 50, ../sass/_contenido.scss */
+  section table tr {
+    border: 1px solid #ccc;
+  }
+  /* line 52, ../sass/_contenido.scss */
+  section table tr:nth-child(2n) {
+    background-color: #ffffd4;
+  }
+  /* line 56, ../sass/_contenido.scss */
+  section table tr:nth-child(2n+1) {
+    background-color: #f2ec94;
+  }
+  /* line 62, ../sass/_contenido.scss */
+  section table td {
+    border: none;
+    border-bottom: 2px solid grey;
+    position: relative;
+    padding-left: 75%;
+  }
+}
+@media (max-width: 420px) {
+  /* line 72, ../sass/_contenido.scss */
+  section table table, section table thead, section table tbody, section table th, section table td, section table tr {
+    display: block;
+  }
+  /* line 76, ../sass/_contenido.scss */
+  section table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* line 82, ../sass/_contenido.scss */
+  section table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  /* line 89, ../sass/_contenido.scss */
+  section table tr {
+    border: 1px solid #ccc;
+  }
+  /* line 91, ../sass/_contenido.scss */
+  section table tr:nth-child(2n) {
+    background-color: #ffffd4;
+  }
+  /* line 95, ../sass/_contenido.scss */
+  section table tr:nth-child(2n+1) {
+    background-color: #f2ec94;
+  }
+  /* line 101, ../sass/_contenido.scss */
+  section table td {
+    border: none;
+    border-bottom: 1px solid grey;
+    position: relative;
+    padding-left: 50%;
+  }
+}
+/* line 110, ../sass/_contenido.scss */
 section table td.table-title {
   text-align: center;
   font-weight: bold;
@@ -178,59 +335,129 @@ section table td.table-title {
   color: white;
   background-color: black;
 }
-/* line 37, ../sass/_contenido.scss */
+/* line 119, ../sass/_contenido.scss */
 section table td {
   font-family: sans-serif;
   color: black;
   padding: 1rem;
 }
-/* line 44, ../sass/_contenido.scss */
+/* line 124, ../sass/_contenido.scss */
+section table td span.titleResponsive {
+  display: none;
+}
+@media (max-width: 760px) {
+  /* line 124, ../sass/_contenido.scss */
+  section table td span.titleResponsive {
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+@media (max-width: 420px) {
+  /* line 124, ../sass/_contenido.scss */
+  section table td span.titleResponsive {
+    display: inline-block;
+    font-weight: bold;
+  }
+}
+/* line 140, ../sass/_contenido.scss */
 section table input {
   border-radius: 4px;
   width: 30%;
   box-shadow: 3px 3px 10px 0px black;
 }
-/* line 52, ../sass/_contenido.scss */
+@media (max-width: 760px) {
+  /* line 140, ../sass/_contenido.scss */
+  section table input {
+    width: 15%;
+  }
+}
+@media (max-width: 420px) {
+  /* line 140, ../sass/_contenido.scss */
+  section table input {
+    width: 13%;
+  }
+}
+/* line 154, ../sass/_contenido.scss */
 section section.content-addForm {
   margin: 10px auto;
-  width: 50%;
-  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
   border: 1px black solid;
   border-radius: 5px;
   padding: 3em;
   background-color: #fffded !important;
-  padding-bottom: 1em;
 }
-/* line 63, ../sass/_contenido.scss */
+/* line 164, ../sass/_contenido.scss */
 section section.content-addForm h2 {
   font-size: 2em;
   margin-top: 0;
   text-align: center;
 }
-/* line 70, ../sass/_contenido.scss */
+@media (max-width: 760px) {
+  /* line 164, ../sass/_contenido.scss */
+  section section.content-addForm h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 420px) {
+  /* line 164, ../sass/_contenido.scss */
+  section section.content-addForm h2 {
+    font-size: 1em;
+  }
+}
+/* line 178, ../sass/_contenido.scss */
+section section.content-addForm p {
+  max-height: 100%;
+  max-width: 100%;
+}
+@media (max-width: 760px) {
+  /* line 178, ../sass/_contenido.scss */
+  section section.content-addForm p {
+    size: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  /* line 178, ../sass/_contenido.scss */
+  section section.content-addForm p {
+    size: 1rem;
+  }
+}
+/* line 191, ../sass/_contenido.scss */
 section section.content-addForm form {
   max-height: 100%;
   max-width: 100%;
 }
-/* line 74, ../sass/_contenido.scss */
+/* line 195, ../sass/_contenido.scss */
 section section.content-addForm form label {
   size: 3rem;
   font-weight: bold;
   font-style: italic;
 }
-/* line 80, ../sass/_contenido.scss */
+@media (max-width: 760px) {
+  /* line 195, ../sass/_contenido.scss */
+  section section.content-addForm form label {
+    size: 2.5rem;
+  }
+}
+@media (max-width: 420px) {
+  /* line 195, ../sass/_contenido.scss */
+  section section.content-addForm form label {
+    size: 2rem;
+  }
+}
+/* line 208, ../sass/_contenido.scss */
 section section.content-addForm form input {
   width: 100%;
   box-shadow: 3px 3px 10px 0px black;
 }
-/* line 85, ../sass/_contenido.scss */
+/* line 213, ../sass/_contenido.scss */
 section section.content-addForm form textarea {
   width: 100%;
   height: auto;
   overflow-y: auto;
   box-shadow: 3px 3px 10px 0px black;
 }
-/* line 93, ../sass/_contenido.scss */
+/* line 221, ../sass/_contenido.scss */
 section section.content-addForm form .formcontent-submit {
   padding: 0.5em;
   color: white;
@@ -239,6 +466,22 @@ section section.content-addForm form .formcontent-submit {
   border-radius: 5px;
   float: right;
   width: 90px;
+}
+@media (max-width: 760px) {
+  /* line 221, ../sass/_contenido.scss */
+  section section.content-addForm form .formcontent-submit {
+    padding: 0.4em;
+    font-size: 14px;
+    width: 70px;
+  }
+}
+@media (max-width: 420px) {
+  /* line 221, ../sass/_contenido.scss */
+  section section.content-addForm form .formcontent-submit {
+    padding: 0.4em;
+    font-size: 12px;
+    width: 50px;
+  }
 }
 
 /*------------------------------------*\
@@ -250,9 +493,6 @@ footer.gridBody-footer {
   border: 10px double black;
   background: url(../img/footer.png);
   background-origin: content-box;
-  position: FIXED;
-  right: 0;
-  left: 0;
   text-align: center;
   color: white;
   background-color: purple;
@@ -262,11 +502,32 @@ footer.gridBody-footer {
   /*Stroke generated with http://owumaro.github.io/text-stroke-generator*/
   text-shadow: black 2px 0px 0px, black 1.75517px 0.95885px 0px, black 1.0806px 1.68294px 0px, black 0.14147px 1.99499px 0px, black -0.83229px 1.81859px 0px, black -1.60229px 1.19694px 0px, black -1.97998px 0.28224px 0px, black -1.87291px -0.70157px 0px, black -1.30729px -1.5136px 0px, black -0.42159px -1.95506px 0px, black 0.56732px -1.91785px 0px, black 1.41734px -1.41108px 0px, black 1.92034px -0.55883px 0px;
 }
-/* line 39, ../sass/_footer.scss */
+@media (max-width: 1024px) {
+  /* line 9, ../sass/_footer.scss */
+  footer.gridBody-footer {
+    padding: 5px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 760px) {
+  /* line 9, ../sass/_footer.scss */
+  footer.gridBody-footer {
+    padding: 5px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 420px) {
+  /* line 9, ../sass/_footer.scss */
+  footer.gridBody-footer {
+    padding: 8px;
+    font-size: 1.1em;
+  }
+}
+/* line 52, ../sass/_footer.scss */
 footer.gridBody-footer div.footer-Msg {
   size: 1rem;
 }
-/* line 43, ../sass/_footer.scss */
+/* line 56, ../sass/_footer.scss */
 footer.gridBody-footer div.footer-notify {
   color: grey;
   position: relative;

@@ -9,8 +9,8 @@
   
 section{
     grid-row: 3;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 
     button{
         box-shadow: 6px 5px 10px 0px $c_base1;  	
@@ -19,18 +19,100 @@ section{
         font-weight: bold; 
         margin-right:.5em;
         @include colorAll($c_base2,$CButton_table);
+
+        @include responsive (mini){
+            
+        }
     }
 
     table{
         width: 100%;
         height: 100%;
         text-align: center;
+        @include responsive (small){
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+        
+            thead tr{ 
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+        
+            td{ 
+                border: none;
+                border-bottom: 2px solid #eee; 
+                position: relative;
+                padding-left: 50%; 
+            }
+            
+            tr { border: 1px solid #ccc; 
+            
+                &:nth-child(2n){
+                    background-color: #ffffd4 ;
+                }
+    
+                &:nth-child(2n+1){
+                    background-color:#f2ec94;
+                }
+                
+            }
+        
+            td{ 
+                border: none;
+                border-bottom: 2px solid grey; 
+                position: relative;
+                padding-left: 75%; 
+            }
+        
+        }
+
+        @include responsive (mini){
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+        
+            thead tr{ 
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+        
+            td{ 
+                border: none;
+                border-bottom: 1px solid #eee; 
+                position: relative;
+                padding-left: 50%; 
+            }
+            
+            tr { border: 1px solid #ccc; 
+            
+                &:nth-child(2n){
+                    background-color: #ffffd4 ;
+                }
+    
+                &:nth-child(2n+1){
+                    background-color:#f2ec94;
+                }
+                
+            }
+        
+            td{ 
+                border: none;
+                border-bottom: 1px solid grey; 
+                position: relative;
+                padding-left: 50%; 
+            }
+        
+        }
 
         td.table-title{
             text-align: center;
             font-weight: bold;
             padding:0.25em;
             @include colorAll($c_base2,$c_base1);
+            
         }
 
 
@@ -38,6 +120,20 @@ section{
             font-family: sans-serif;
             color: $c_base1;
             padding: 1rem;
+
+            span.titleResponsive{
+                display:none;
+
+                @include responsive (small){
+                    display:inline-block;
+                    font-weight: bold;
+                }
+
+                @include responsive (mini){
+                    display:inline-block;
+                    font-weight: bold;
+                }
+            }
         }
 
 
@@ -45,25 +141,50 @@ section{
             border-radius: 4px;
             width: 30%;
             box-shadow: 3px 3px 10px 0px $c_base1;
+            @include responsive (small){
+                width: 15%;
+            }
+            @include responsive (mini){
+                width: 13%;
+            }
         }
     
     }
 
         section.content-addForm{
             margin: 10px auto;
-            width: 50%;
-            height: 100%;
+            max-width: 50%;
+            max-height: 100%;
             @include border(1px,$c_base1,solid);
             border-radius: 5px;
             padding: 3em;
             background-color:$FORM_BG !important;
-            padding-bottom: 1em;
 
-
+          
             h2{
                 font-size: 2em;
                 margin-top: 0;
                 text-align: center; 
+
+                @include responsive (small){
+                    font-size: 1.5em;
+                }
+                @include responsive (mini){
+                    font-size: 1em;
+                }
+            }
+
+
+            p{
+                max-height: 100%;
+                max-width: 100%;
+
+                @include responsive (small){
+                    size: 1.5rem;
+                }
+                @include responsive (mini){
+                    size: 1rem;
+                }
             }
 
 
@@ -75,6 +196,13 @@ section{
                     size: 3rem;
                     font-weight: bold;
                     font-style: italic;
+
+                    @include responsive (small){
+                        size: 2.5rem;
+                    }
+                    @include responsive (mini){
+                        size: 2rem;
+                    }
                 }
 
                 input{
@@ -97,6 +225,17 @@ section{
                     border-radius: 5px;
                     float: right;
                     width: 90px;
+
+                    @include responsive (small){
+                        padding: 0.4em;
+                        font-size: 14px;
+                        width: 70px;
+                    }
+                    @include responsive (mini){
+                        padding: 0.4em;
+                        font-size: 12px;
+                        width: 50px;
+                    }
                 }
             }
         }

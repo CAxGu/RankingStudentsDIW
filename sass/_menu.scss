@@ -55,6 +55,19 @@ nav.gridBody-navBar{
                     animation-timing-function: ease-out; 
                     animation-iteration-count: infinite;
                     animation-play-state: running;
+                    
+                    @include responsive (small){
+                        cursor: pointer;
+                        @include colorAll($c_base2,$c_base1);;
+                        transform: inherit;
+                        animation:inherit;
+                    }
+                    @include responsive (mini){
+                        cursor: pointer;
+                        @include colorAll($c_base2,$c_base1);
+                        transform: inherit;
+                        animation:inherit;
+                    }
 
                 }
             }

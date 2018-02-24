@@ -44,7 +44,7 @@
         @content
         }
     } @else if $size == small{
-        @media(max-width: 800px){
+        @media(max-width: 760px){
         @content
         }
     } @else if $size == mini{
